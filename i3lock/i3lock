@@ -1,0 +1,60 @@
+#!/bin/sh
+
+#Background Color
+set $bgcolor	 #1A2F4B80 
+#Inactive Background Color
+set $ibgcolor	 #35425980
+#Text Color
+set $txtcolor	 #84C69B
+#Focused Workspaces
+set $fwscolor    #11253F
+#Bar Color
+set $barcolor   #0078800D
+#Inactive Text colors
+set $itxtcolor	 #D6D5A8
+#Border Color
+set $bdrcolor	 #28475C
+#Indicator Color
+set $indcolor	 #2F8886
+#Urgent Color
+set $urgcolor	 #950101
+#Seperator Color
+set $sprcolor	 #1B2430
+
+
+
+BLANK='#28475c'
+CLEAR='#11253f'
+DEFAULT='#84c69b'
+TEXT='#2f8886'
+WRONG='#950101'
+VERIFYING='#4cefff'
+
+/usr/bin/i3lock \
+--insidever-color=$CLEAR     \
+--ringver-color=$VERIFYING   \
+\
+--insidewrong-color=$CLEAR   \
+--ringwrong-color=$WRONG     \
+\
+--inside-color=$BLANK        \
+--ring-color=$DEFAULT        \
+--line-color=$BLANK          \
+--separator-color=$DEFAULT   \
+\
+--verif-color=$TEXT          \
+--wrong-color=$TEXT          \
+--time-color=$TEXT           \
+--date-color=$TEXT           \
+--layout-color=$TEXT         \
+--keyhl-color=$WRONG         \
+--bshl-color=$WRONG          \
+\
+--screen 1                   \
+--blur 5                     \
+--clock                      \
+--indicator                  \
+--time-str="%H:%M:%S"        \
+--date-str="%A, %Y-%m-%d"       \
+--keylayout 1                \
+
