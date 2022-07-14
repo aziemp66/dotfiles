@@ -1,4 +1,5 @@
 //@theme "/usr/share/rofi/themes/DarkBlue.rasi"
 //@theme "/usr/share/rofi/themes/DarkBlue.rasi"
 //@theme "/usr/share/rofi/themes/DarkBlue.rasi"
-@theme "/usr/share/rofi/themes/onedark.rasi"
+//@theme "/usr/share/rofi/themes/onedark.rasi"
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
