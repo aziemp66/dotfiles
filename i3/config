@@ -326,7 +326,7 @@ set $txtcolor	 #84C69B
 #Focused Workspaces
 set $fwscolor    #11253F
 #Bar Color
-set $barcolor    #0078800D
+set $barcolor    #30006480
 #Inactive Text colors
 set $itxtcolor	 #D6D5A8
 #Border Color
@@ -370,7 +370,7 @@ exec_always feh --bg-fill /home/aziemp66/.config/i3/arch.png
   #Code
   bindsym $mod+c exec code
   #Chrome
-  bindsym $mod+b exec brave
+  bindsym $mod+b exec firefox
   #Whatsapp
   bindsym $mod+z exec whatsapp-nativefier
 
