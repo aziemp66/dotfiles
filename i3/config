@@ -336,7 +336,7 @@ set $indcolor	 #2F8886
 #Urgent Color
 set $urgcolor	 #950101
 #Seperator Color
-set $sprcolor	 #1B2430
+set $sprcolor	 #10898d
 
 #				Border		Background		text		indicator
 client.focused			$bdrcolor	$bgcolor		$txtcolor	$indcolor
