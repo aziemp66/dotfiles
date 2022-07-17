@@ -242,14 +242,14 @@ mode "$mode_gaps_left" {
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-#set $ws1 "1:  Terminal"
-#set $ws2 "2:  Code"
-#set $ws3 "3:  Browser"
-#set $ws4 "4:  Whatsapp"
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 "1:  Terminal"
+set $ws2 "2:  Code"
+set $ws3 "3:  Firefox"
+set $ws4 "4:  YT Music"
+#set $ws1 "1"
+#set $ws2 "2"
+#set $ws3 "3"
+#set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -372,7 +372,7 @@ exec_always feh --bg-fill /home/aziemp66/.config/i3/arch.png
   #Chrome
   bindsym $mod+b exec firefox
   #Whatsapp
-  bindsym $mod+z exec whatsapp-nativefier
+  bindsym $mod+z exec youtube-music
 
 # Keybinding for i3lock
 bindsym $mod+Shift+x exec /home/aziemp66/.config/i3lock/i3lock
@@ -382,8 +382,8 @@ bindsym Print exec flameshot full
 bindsym Shift+Print exec flameshot gui
 
 # Assign Programs to Workspaces
-#for_window [class="kitty"] move to workspace $ws1
-#for_window [class="Code"] move to workspace $ws2
-#for_window [class="Brave-browser"] move to workspace $ws3
-#for_window [class="whatsapp-nativefier-d40211"] move to workspace $ws4
+for_window [class="kitty"] move to workspace $ws1
+for_window [class="Code"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws3
+for_window [class="YouTube Music"] move to workspace $ws4
 

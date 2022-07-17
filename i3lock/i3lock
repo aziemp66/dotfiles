@@ -21,8 +21,6 @@ set $urgcolor	 #950101
 #Seperator Color
 set $sprcolor	 #1B2430
 
-
-
 BLANK='#28475c'
 CLEAR='#11253f'
 DEFAULT='#84c69b'
