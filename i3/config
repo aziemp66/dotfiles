@@ -242,8 +242,8 @@ mode "$mode_gaps_left" {
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: "
-set $ws2 "2: "
+set $ws1 "1"
+set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 #set $ws1 "1"
@@ -346,20 +346,20 @@ client.urgent			$urgcolor	$urgcolor		$txtcolor	$urgcolor
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3blocks -c /home/aziemp66/.config/i3blocks/i3blocks.conf
-	i3bar_command i3bar --transparency
-	# tray_output none
-	font pango:monospace 11
-	colors {
-		background	$barcolor
-		separator	$sprcolor
-		#				border		background		text
-		focused_workspace		$fwscolor	$fwscolor		$txtcolor
-		inactive_workspace		$ibgcolor	$ibgcolor		$itxtcolor
-		urgent_workspace		$urgcolor	$urgcolor		$txtcolor
-	}
-}
+# bar {
+#        status_command i3blocks -c /home/aziemp66/.config/i3blocks/i3blocks.conf
+#	i3bar_command i3bar --transparency
+#	# tray_output none
+#	font pango:monospace 11
+#	colors {
+#		background	$barcolor
+#		separator	$sprcolor
+#		#				border		background		text
+#		focused_workspace		$fwscolor	$fwscolor		$txtcolor
+#		inactive_workspace		$ibgcolor	$ibgcolor		$itxtcolor
+#		urgent_workspace		$urgcolor	$urgcolor		$txtcolor
+#	}
+# }
 # Keyboard Layout
 exec_always setxkbmap us
 
@@ -387,3 +387,5 @@ for_window [class="kitty"] move to workspace $ws1
 for_window [class="firefox"] move to workspace $ws2
 #for_window [class="YouTube Music"] move to workspace $ws4
 
+#Polybar Launch Script
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
