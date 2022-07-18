@@ -113,10 +113,10 @@ bindsym $mod+slash focus parent
 bindsym $mod+backslash focus child
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 15
+gaps inner 10
 gaps outer 5
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
@@ -364,7 +364,7 @@ client.urgent			$urgcolor	$urgcolor		$txtcolor	$urgcolor
 exec_always setxkbmap us
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/aziemp66/.config/i3/arch.png
+exec_always feh --bg-fill /home/aziemp66/.config/i3/arch5.jpg
 
 # Applications Keybinding
   #Code
