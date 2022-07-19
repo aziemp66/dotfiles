@@ -117,7 +117,7 @@ for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
 gaps inner 5
-gaps outer 5
+gaps outer 0
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -364,7 +364,7 @@ client.urgent			$urgcolor	$urgcolor		$txtcolor	$urgcolor
 exec_always setxkbmap us
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/aziemp66/.config/i3/arch4.jpg
+exec_always feh --bg-fill /home/aziemp66/.config/i3/arch3.jpg
 
 # Applications Keybinding
   #Code
@@ -389,3 +389,6 @@ for_window [class="firefox"] move to workspace $ws2
 
 #Polybar Launch Script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+#Xdman Download Video Floating Windows
+for_window [class="xdman-Main" title=" "] floating enable, move position center
