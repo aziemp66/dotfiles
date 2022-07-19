@@ -116,7 +116,7 @@ bindsym $mod+backslash focus child
 for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 5
 gaps outer 5
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
@@ -364,7 +364,7 @@ client.urgent			$urgcolor	$urgcolor		$txtcolor	$urgcolor
 exec_always setxkbmap us
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/aziemp66/.config/i3/arch5.jpg
+exec_always feh --bg-fill /home/aziemp66/.config/i3/arch4.jpg
 
 # Applications Keybinding
   #Code
