@@ -364,7 +364,7 @@ client.urgent			$urgcolor	$urgcolor		$txtcolor	$urgcolor
 exec_always setxkbmap us
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/aziemp66/.config/i3/arch6.png
+exec_always feh --bg-fill /home/aziemp66/.config/i3/arch8.png
 
 # Applications Keybinding
   #Code
