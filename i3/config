@@ -116,7 +116,7 @@ bindsym $mod+backslash focus child
 for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 5
+gaps inner 10
 gaps outer 5
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
@@ -383,9 +383,9 @@ bindsym Shift+Print exec flameshot gui
 
 # Assign Programs to Workspaces
 for_window [class="kitty"] move to workspace $ws1
-#for_window [class="Code"] move to workspace $ws2
-for_window [class="firefox"] move to workspace $ws2
-#for_window [class="YouTube Music"] move to workspace $ws4
+for_window [class="Code"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws3
+for_window [class="YouTube Music"] move to workspace $ws10
 
 #Polybar Launch Script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
