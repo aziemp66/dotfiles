@@ -34,6 +34,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Start Battery Tray Icon 
+exec --no-startup-id cbatticon
+
 # Execute Composite Manager
 exec --no-startup-id picom
 
@@ -116,8 +119,8 @@ bindsym $mod+backslash focus child
 for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 10
-gaps outer 5
+gaps inner 5
+gaps outer 0
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -318,15 +321,15 @@ bindsym $mod+r mode "resize"
 # Windows Color
 
 #Background Color
-set $bgcolor	 #17D7A080 
+set $bgcolor	 #17D7A0 
 #Inactive Background Color
-set $ibgcolor	 #35425980
+set $ibgcolor	 #354259
 #Text Color
 set $txtcolor	 #84C69B
 #Focused Workspaces
 set $fwscolor    #11253F
 #Bar Color
-set $barcolor    #30006480
+set $barcolor    #300064
 #Inactive Text colors
 set $itxtcolor	 #D6D5A8
 #Border Color
