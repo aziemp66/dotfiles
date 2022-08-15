@@ -371,7 +371,7 @@ exec_always feh --bg-fill /home/aziemp66/.config/i3/arch8.png
 
 # Applications Keybinding
   #Code
-  bindsym $mod+c exec code
+  bindsym $mod+c exec "kitty nvim"
   #Chrome
   bindsym $mod+b exec firefox
   #Whatsapp
