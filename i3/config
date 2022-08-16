@@ -371,7 +371,7 @@ exec_always feh --bg-fill /home/aziemp66/.config/i3/arch8.png
 
 # Applications Keybinding
   #Code
-  bindsym $mod+c exec "kitty nvim"
+  bindsym $mod+c exec "kitty --class neovim nvim"
   #Chrome
   bindsym $mod+b exec firefox
   #Whatsapp
@@ -386,7 +386,7 @@ bindsym Shift+Print exec flameshot gui
 
 # Assign Programs to Workspaces
 for_window [class="kitty"] move to workspace $ws1
-for_window [class="Code"] move to workspace $ws2
+for_window [class="neovim"] move to workspace $ws2
 for_window [class="firefox"] move to workspace $ws3
 for_window [class="YouTube Music"] move to workspace $ws10
 
