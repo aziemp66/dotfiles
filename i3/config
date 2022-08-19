@@ -116,7 +116,7 @@ bindsym $mod+slash focus parent
 bindsym $mod+backslash focus child
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 # Set inner/outer gaps
 gaps inner 5
